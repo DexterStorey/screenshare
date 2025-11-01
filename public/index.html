@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Local Screen Share - Broadcaster</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Local Screen Share</h1>
+      <p id="status">Connecting to signalling server...</p>
+      <section class="controls">
+        <button id="start" disabled>Start sharing</button>
+        <button id="stop" disabled>Stop sharing</button>
+      </section>
+      <section class="preview">
+        <video id="preview" autoplay playsinline></video>
+      </section>
+      <section class="instructions">
+        <h2>How it works</h2>
+        <p>
+          Click <strong>Start sharing</strong> and choose your Chrome window with "Share system audio".
+          Anyone on your network can open <code>http://localhost:3000/viewer</code> to watch.
+        </p>
+      </section>
+    </main>
+    <script type="module" src="/js/broadcaster.js"></script>
+  </body>
+</html>
+

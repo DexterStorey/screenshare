@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Local Screen Share - Viewer</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main>
+      <header class="viewer-header">
+        <div class="title-group">
+          <h1>Live Stream</h1>
+          <span id="live-indicator" class="live-badge" hidden>Live</span>
+        </div>
+        <span id="viewer-count" class="viewer-count" hidden>0 people watching</span>
+      </header>
+      <section class="video-wrapper">
+        <video id="stream" autoplay playsinline controls controlslist="nodownload"></video>
+        <div id="interaction-overlay" class="interaction-overlay hidden">
+          <button id="resume">Tap to join the live stream</button>
+          <p>Your browser needs one tap to start playback with sound.</p>
+        </div>
+        <div id="waiting-indicator" class="waiting-indicator">Waiting for broadcaster...</div>
+      </section>
+      <p id="status">Connecting...</p>
+    </main>
+    <script type="module" src="/js/viewer.js"></script>
+  </body>
+</html>
+
