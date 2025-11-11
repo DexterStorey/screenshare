@@ -1,3 +1,3 @@
-share your screen as a livestream on a website with p2p websockets
+# README
 
 `bun run src/server`
